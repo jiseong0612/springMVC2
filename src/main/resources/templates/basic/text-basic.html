@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>th:text 연습</h1>
+<ul>
+	<li>
+		컨텐츠 안에다 직접 출력 하기 = [(${data})]
+	</li>
+	<li th:utext="${data}">
+		태그 안에다 출력 이스케이프 적용하지 않는다.
+	</li>
+	<li th:text="${data}">
+		태그 안에다 출력 이스케이프 적용하지 않는다.
+	</li>
+	<!-- 기본적으로는 이스케이프 처리가 된 th:text 를 사용해야한다. -->
+</ul>
+</body>
+</html>
