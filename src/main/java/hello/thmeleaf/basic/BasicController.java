@@ -93,7 +93,8 @@ public class BasicController {
     }
 
     @GetMapping("/attribute")
-    public String attribute() {
+    public String attribute(Model model) {
+    	model.addAttribute("result", true);
         return "basic/attribute";
     }
 
