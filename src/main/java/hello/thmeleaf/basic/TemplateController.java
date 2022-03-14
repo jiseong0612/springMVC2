@@ -11,10 +11,11 @@ public class TemplateController {
 	public String fragement() {
 		return "template/fragment/fragmentMain";
 	}
-	
+
 	@GetMapping("/layout")
 	public String layout() {
+		//레이아웃 메인
 		return "template/layout/layoutMain";
 	}
-	
+
 }
